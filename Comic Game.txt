@@ -1,0 +1,113 @@
+Game
+The game will be crafted using VS blend and VS Code.
+Language: C#
+Modelling: Astah
+
+Owner of comic company
+-create characters
+	*Characters
+	*Database For Characters
+	*Writers will suggest Characters/ You can make one
+	
+-Finances
+	*Income
+		*Sponsorships/ Advertisement
+		*Comic Sales
+		*TV Deals
+		*Movie Deals
+		*Sell of Rights To Characters
+
+	*Cost
+		*Writers
+		*Ads
+		*Publishing
+		*Legal
+		*Tax
+-Hire Writers & Artist
+	*Each Writer and Artist will have variable Stats
+	Theses stats are to come.
+	Check Choice Of Games/ GDS for reference~
+	
+-Create issues
+	*Auto Generate Comics Weekly/ Monthly/ Annually
+	*Auto Number.
+	*Can Commission Special Cannon and Non Cannon Titles
+	*Issues Gain popularity
+	*Can Spin off issues
+	
+-Compete with other companies
+	*Make at least 15 other comic companies
+	*Auto Generate Comic Companies
+-Lawsuits
+	*Character Infringement
+	*Copyright Violation
+	*Art Use
+	*Script Use
+-Company/ Buyouts/ Bankruptcies
+	*Buy Companies who go bankrupt or whom have large amount of debt
+	* Spin off into an active subsidiary
+	*Absorb the ruined Company
+	*Company Mergers
+- Create Arcs
+	*Types of Arcs: Minor, Major, Crossover Minor, Crossover Major and Cataclysm
+	*Minor - Can be run at Writers discretion and can go from 1-7 issues respectively.
+	*Major - Can be run with an okay from COO. Can be large scale event.
+	*Crossover-Minor can feature characters from  company owned. They can hold a minor Arc runs from 1- 10 issues
+	*Crossover Major- Needs to be improved. Can feature characters from other companies. Has to use a major Arc Runs for 1-104 issues
+	*Can be used to increase 
+	
+- Cataclysm Events
+	*Large Scale Events that could change the course of Universe
+	* Collapse of Multi-verse
+	* Attack of Gods
+	* Large Natural Disator
+	* Multi verse Invasion
+	* City Destruction
+	etc
+	
+	* This will allow future company assets to be integrated in Main Continuity
+	* Will also allow overhaul of characters such as age, gender, etc
+- Comic Ratings and Sell Charts
+	*Comic Rating will depend on the ability of the writers and and artist whom worked on the comic.
+	*Sells will be based on company visibility and comic rating.
+	
+- Newspaper
+- Get Movie Deals
+- Get Game Deal
+
+
+
+
+
+
+
+
+*Maybe....
+Comic Character
+- The Create own Comic Character
+	*Create your own Comic character
+	*Allow him to become your companies flagship or support
+	*allow him to work with other characters to build popularity
+- Sim issues or play yourself
+	-Use the fighting system to play fights or sim it.
+	-Fighting can ensure popularity boost with win.
+	-Sim can cause loss 
+- The tougher the issue the higher the popularity rank
+ - A large arc with difficult villains can cause huge character boost
+- Take sidekick
+	*Take a sidekick. Train him to a full fledge hero, 
+- Moral
+	*Can make a hero outlook dark. Can cause retirement. etc
+- Arcs and Storyline
+	*Can overhaul character
+- Watch Character Progress
+	*Upgrade character with Monetary upgrades
+- Character Legacy and Inheritance
+	* if hero dies you can choose to have Sidekick take the mantle. Or write a entirely new person take it.
+
+
+
+
+
+
+
