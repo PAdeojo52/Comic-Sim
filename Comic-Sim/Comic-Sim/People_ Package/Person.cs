@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Comic_Sim.People__Package
 {
-    class Person : personInterface
+   public class Person 
     {
         //Each person must have a personID
         //for databse
@@ -42,9 +42,111 @@ namespace Comic_Sim.People__Package
         //How loyal they are to their current company
         private int loyalty;
 
+        //Allows for the setting of gender for characters
+        public string[] genderArray = { "male", "felmale" };
+
+        //Sets ethnicity
+        public string[] ethnicityArray = { "White", "Black", "Native", "Asian", "Middle Eastern", "Islander" };
+
+        //Sets Nationality
+        //American
+        public string[] nationalityArray = {"Canadian", "Mexican","American",
+        "Argentinian","Bolivian","Brazilian","Chilean","Colombian","Ecuadorian","Paraguayan","	Peruvian","Venezuelan",
+        "Cuban", "Jamaican",
+        "British", "Irish", "Scottish", "Welsh",
+         "Austrian", "French", "German" , "Dutch"};
+        
+
+        //
+
+        //sets what the person can do
+        private bool canBeArtist = false;
+        private bool canBeEditor = false;
+        private bool canBeLawyer = false;
+        private bool canWebDev = false;
+        private bool canBeWriter = false;
+        private bool canBeExecutive = false;
         //Sets the company the person is hired to
-      
-            // The getter and sets for the attributes
+
+
+
+        /// <summary>
+        /// Executive  Variables.
+        /// </summary>
+        // The getter and sets for the attributes
+        //How well a product can adapt to a changing market
+        //Adapts  to changes in comic trends
+        private int adaptability;
+        //Allows for better marketing Ideas
+        private int strategicThinking;
+        //Would your CEO screw over your company?
+        private int integrity;
+        // private int trustworthy; Merging with integrity
+        // Buffs the worrkers overall happiness
+        private int communicator;
+       //Would your exe allow for distribution of generes outside the higher bought/ company modusOP
+        private int vision;
+
+
+
+        //Lawyers Variables
+        //This will deter any in house lawsuits
+        private int communicationSkills;
+        //This helps place the odds in your favor if sued
+        private int judgement;
+        //Will be able to better analyze cases for better results
+        private int analyticalSkills;
+        //Allows better research for precedent set in cases
+        private int researchSkills;
+        // private int peopleSkills;
+        //Allows the lawyer to find legal loopholes
+        private int legalCreativity;
+
+
+        //Writer Attributes
+        //How much content is provided in the story
+        private int substance;
+        //The Ability centralize the story on a character
+        //This could be good in single hero comics
+        //Badd in combinations
+        private int focus;
+        //The ability place reason in story.
+        //Explains why the villian is bad, why the hero is good
+        //Explains plot, basically explains things
+        private int logic;
+        //The ability to write a story that is entertaining
+        private int entertainment;
+        //The ability to write a unique story
+        //Think G.Morrsion with Infinite Crisis
+        private int creativiteWriting;
+        //Allows the story to be humorous
+        private int humor;
+        //The ability to write more mature stories
+        private int mature;
+
+
+        //illustrator Attributes
+
+        //The ability to design characters,settings,villians, etc
+        private int design;
+        //The ability to take creative leaps with the characters
+        private int drawingCreativity;
+        //Allows the artist to have a stronger view of how the comic should turn out.
+        private int drawingVision;
+        //Allows for better collabs
+        private int drawingHumility;
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Regular Attributes
+        /// </summary>
         public int PersonID
         {
             get
@@ -189,25 +291,377 @@ namespace Comic_Sim.People__Package
         }
 
 
+        ///<summary>Roles Getters and Setters</summary>
+        ///
+        /// 
+        /// 
+        ///
+
+        public bool CanBeArtist
+        {
+            get
+            {
+                return canBeArtist;
+            }
+
+            set
+            {
+                canBeArtist = value;
+            }
+        }
+
+        public bool CanBeEditor
+        {
+            get
+            {
+                return canBeEditor;
+            }
+
+            set
+            {
+                canBeEditor = value;
+            }
+        }
+
+        public bool CanBeLawyer
+        {
+            get
+            {
+                return canBeLawyer;
+            }
+
+            set
+            {
+                canBeLawyer = value;
+            }
+        }
+
+        public bool CanWebDev
+        {
+            get
+            {
+                return canWebDev;
+            }
+
+            set
+            {
+                canWebDev = value;
+            }
+        }
+
+        public bool CanBeWriter
+        {
+            get
+            {
+                return canBeWriter;
+            }
+
+            set
+            {
+                canBeWriter = value;
+            }
+        }
+
+        public bool CanBeExecutive
+        {
+            get
+            {
+                return canBeExecutive;
+            }
+
+            set
+            {
+                canBeExecutive = value;
+            }
+        }
+
+
+
+        /// <summary>
+        /// Executive Getters & Setters
+        /// </summary>
+        /// <returns></returns>
+        /// 
+        public int Adaptability
+        {
+            get
+            {
+                return adaptability;
+            }
+
+            set
+            {
+                adaptability = value;
+            }
+        }
+
+        public int StrategicThinking
+        {
+            get
+            {
+                return strategicThinking;
+            }
+
+            set
+            {
+                strategicThinking = value;
+            }
+        }
+
+        public int Integrity
+        {
+            get
+            {
+                return integrity;
+            }
+
+            set
+            {
+                integrity = value;
+            }
+        }
+
+        public int Communicator
+        {
+            get
+            {
+                return communicator;
+            }
+
+            set
+            {
+                communicator = value;
+            }
+        }
+
+        public int Vision
+        {
+            get
+            {
+                return vision;
+            }
+
+            set
+            {
+                vision = value;
+            }
+        }
+
+
+
+        /// <summary>
+        /// Editor Getters and Setters
+        /// </summary>
+        /// <returns></returns>
+
+
+        public int CommunicationSkills
+        {
+            get
+            {
+                return communicationSkills;
+            }
+
+            set
+            {
+                communicationSkills = value;
+            }
+        }
+
+        public int Judgement
+        {
+            get
+            {
+                return judgement;
+            }
+
+            set
+            {
+                judgement = value;
+            }
+        }
+
+        public int AnalyticalSkills
+        {
+            get
+            {
+                return analyticalSkills;
+            }
+
+            set
+            {
+                analyticalSkills = value;
+            }
+        }
+
+        public int ResearchSkills
+        {
+            get
+            {
+                return researchSkills;
+            }
+
+            set
+            {
+                researchSkills = value;
+            }
+        }
+
+        public int LegalCreativity
+        {
+            get
+            {
+                return legalCreativity;
+            }
+
+            set
+            {
+                legalCreativity = value;
+            }
+        }
+
+        public int Substance
+        {
+            get
+            {
+                return substance;
+            }
+
+            set
+            {
+                substance = value;
+            }
+        }
+
+        public int Focus
+        {
+            get
+            {
+                return focus;
+            }
+
+            set
+            {
+                focus = value;
+            }
+        }
+
+        public int Logic
+        {
+            get
+            {
+                return logic;
+            }
+
+            set
+            {
+                logic = value;
+            }
+        }
+
+        public int Entertainment
+        {
+            get
+            {
+                return entertainment;
+            }
+
+            set
+            {
+                entertainment = value;
+            }
+        }
+
+        public int CreativiteWriting
+        {
+            get
+            {
+                return creativiteWriting;
+            }
+
+            set
+            {
+                creativiteWriting = value;
+            }
+        }
+
+        public int Humor
+        {
+            get
+            {
+                return humor;
+            }
+
+            set
+            {
+                humor = value;
+            }
+        }
+
+        public int Mature
+        {
+            get
+            {
+                return mature;
+            }
+
+            set
+            {
+                mature = value;
+            }
+        }
+
+
+
+
+
+
+
         //This is the actual methods for persons
-        
+
         // All bools here are defaulted as false. A genric person with no 
-        //job capababilties will default to excutives 
-        public bool isAssistantEditor()
-        {
-            return false;
-        }
+        //job capababilties will default to excutives
 
-        public bool isbackgroundArtist()
-        {
-            return false;
-        }
+        //Bassic People needed
+        //Web Devlopers
+        // Boolean iswebDeveloper();
+        //Boolean iswebDesigners();
+        //Writers
+        // Boolean isWriter();
+        //Boolean willCoWrite();
+        //Illustrators
+        //  Boolean isCharDesigner();
+        // Boolean isDesigner();
+        // Boolean isbackgroundArtist();
+        //Boolean isIllustrator();
+        //Editors
+        //  Boolean isJuniorEditor();
+        //   Boolean isAssistantEditor();
+        // Boolean isEditor();
+        // Boolean isEditorInChief();
+        //Lawyer
+        //  Boolean isLawyer();
+        //Executives
+        /* Boolean isChiefOperatingOfficer();
+         Boolean isChiefCreativeOfficer();
+         Boolean isChiefFinacialOfficer();
+         Boolean isChiefExecutiveOfficer();
+         */
 
-        public bool isCharDesigner()
-        {
-            return false;
-        }
 
+
+
+
+
+
+
+        //Executive
+
+        //  public Boolean canBeExecutive()
+        //  {
+        //     return false;
+        //  }
+        /*
         public bool isChiefCreativeOfficer()
         {
             return true;
@@ -227,37 +681,85 @@ namespace Comic_Sim.People__Package
         {
             return true;
         }
+        */
 
-        public bool isDesigner()
-        {
-            return false;
-        }
 
-        public bool isEditor()
-        {
-            return false;
-        }
+        //Artist
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        /// 
 
-        public bool isEditorInChief()
-        {
-            return false;
-        }
 
+        /*
+         * 
+         *
         public bool isIllustrator()
         {
             return false;
         }
+        public bool isDesigner()
+        {
+            return false;
+        }
+        public bool isCharDesigner()
+        {
+            return false;
+        }
 
+        public bool isbackgroundArtist()
+        {
+            return false;
+        }
+        */
+
+
+
+        //Editors
+
+
+        /*
         public bool isJuniorEditor()
         {
             return false;
         }
+        public bool isAssistantEditor()
+        {
+            return false;
+        }
+        public bool isEditor()
+        {
+            return false;
+        }
+        public bool isEditorInChief()
+        {
+            return false;
+        }
+        */
 
+
+
+
+
+
+
+
+        //Lawyers
+
+
+        /*
+         
         public bool isLawyer()
         {
             return false;
         }
+        */
 
+        //WebDevs
+
+
+        /*
         public bool iswebDesigners()
         {
             return false;
@@ -267,7 +769,14 @@ namespace Comic_Sim.People__Package
         {
             return false;
         }
+        */
 
+
+
+        //Writers
+
+
+        /*
         public bool isWriter()
         {
             return false;
@@ -277,6 +786,15 @@ namespace Comic_Sim.People__Package
         {
             return false;
         }
+        */
+
+
+
+
+
+
+
+
 
         //Theses are the action methods a generic person can take
         public void jobConsderation()

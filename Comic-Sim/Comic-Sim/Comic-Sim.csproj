@@ -52,11 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="People_ Package\Writers.cs" />
     <Compile Include="People_ Package\Editors.cs" />
     <Compile Include="People_ Package\Executives.cs" />
     <Compile Include="People_ Package\Lawyers.cs" />
     <Compile Include="People_ Package\Person.cs" />
-    <Compile Include="People_ Package\personInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

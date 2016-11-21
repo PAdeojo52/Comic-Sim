@@ -6,83 +6,52 @@ using System.Threading.Tasks;
 
 namespace Comic_Sim.People__Package
 {
+
+
+  //  J.P.Morgan once said, 
+       // "I do not pay my lawyers to tell me what I cannot do,
+      //  but to tell me how to do what I want to do."
     class Lawyers: Person
     {
-        //This will deter any in house lawsuits
-        private int communicationSkills;
-        //This helps place the odds in your favor if sued
-        private int judgement;
-        //Will be able to better analyze cases for better results
-        private int analyticalSkills;
-        //Allows better research for precedent set in cases
-        private int researchSkills;
-        // private int peopleSkills;
-        //Allows the lawyer to find legal loopholes
-        private int creativity;
+       
 
-        public int CommunicationSkills
+       public void Sue()
         {
-            get
-            {
-                return communicationSkills;
-            }
 
-            set
-            {
-                communicationSkills = value;
-            }
         }
 
-        public int Judgement
-        {
-            get
-            {
-                return judgement;
-            }
 
-            set
-            {
-                judgement = value;
-            }
+        public void fightLawsuit()
+        {
+
         }
 
-        public int AnalyticalSkills
+        public void contractLoopHole()
         {
-            get
-            {
-                return analyticalSkills;
-            }
 
-            set
-            {
-                analyticalSkills = value;
-            }
         }
 
-        public int ResearchSkills
+        public void askPromotion()
         {
-            get
-            {
-                return researchSkills;
-            }
 
-            set
-            {
-                researchSkills = value;
-            }
         }
 
-        public int Creativity
-        {
-            get
-            {
-                return creativity;
-            }
 
-            set
-            {
-                creativity = value;
-            }
+        public void adviseFire()
+        {
+
         }
+
+        public void quit()
+        {
+
+        }
+
+
+        public void incorporation()
+        {
+
+        }
+
     }
 }
