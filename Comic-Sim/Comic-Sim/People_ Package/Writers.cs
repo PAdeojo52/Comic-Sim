@@ -69,7 +69,7 @@ namespace Comic_Sim.People__Package
 
 
             // //Randoms foe class specfic stats: Artist
-
+            
             int designRand = rnd.Next(0, 100);
             int drawingCreativityRand = rnd.Next(0, 100);
             int drawingVisionRand = rnd.Next(0, 100);
@@ -102,7 +102,7 @@ namespace Comic_Sim.People__Package
 
 
 
-
+            //Normal General Values
             //create random valu
             PersonID = writerSetter;
             //Select enum from a list
@@ -124,20 +124,79 @@ namespace Comic_Sim.People__Package
             //Sets Loyalty
             Loyalty = loyaltySetter;
 
-           
+
 
             //Setting Writing Stats
+           
+            
+                Substance = substanceSetter;
+                Focus = focusSetter;
+                Logic = logicSetter;
+                Entertainment = entertainmentSetter;
+                CreativiteWriting = cwSetter;
+                Humor = humorSetter;
+                Mature = matureSetter;
+           
+    
+            
 
-            Substance = substanceSetter;
-            Focus = focusSetter;
-            Logic = logicSetter;
-            Entertainment = entertainmentSetter;
-            CreativiteWriting = cwSetter;
-            Humor = humorSetter;
-            Mature = matureSetter;
+            //Setting Artist stats
+
+            if (CanBeArtist == true)
+            {
+                Design = designRand;
+                DrawingCreativity = drawingCreativityRand;
+                DrawingVision = drawingVisionRand;
+                DrawingHumility = humilityRand;
+            }
+            else
+            {
+                Design = 0;
+                DrawingCreativity = 0;
+                DrawingVision = 0;
+                DrawingHumility = 0;
+
+            }
+
+
+            //Executise setting
+
+            if (CanBeExecutive == true)
+            {
+                Adaptability = adapRand;
+                StrategicThinking = stratThinkingRand;
+                Integrity = integrityRand;
+                Communicator = communicaterRand;
+                Vision = visionRand;
+            }
+            else
+            {
+                Adaptability = 0;
+                StrategicThinking = 0;
+                Integrity = 0;
+                Communicator = 0;
+                Vision = 0;
+            }
 
 
 
+            //lawyer stuff
+            if(CanBeLawyer == true)
+            {
+                CommunicationSkills = communicaterRand;
+                Judgement = judgementRand;
+                AnalyticalSkills = analyticSkillRand;
+                ResearchSkills = lawResearchRand;
+                LegalCreativity = legalCreativityRand;
+            }
+            else
+            {
+                CommunicationSkills = 0;
+                Judgement = 0;
+                AnalyticalSkills = 0;
+                ResearchSkills = 0;
+                LegalCreativity = 0;
+            }
 
 
 

@@ -611,6 +611,58 @@ namespace Comic_Sim.People__Package
             }
         }
 
+        public int Design
+        {
+            get
+            {
+                return design;
+            }
+
+            set
+            {
+                design = value;
+            }
+        }
+
+        public int DrawingCreativity
+        {
+            get
+            {
+                return drawingCreativity;
+            }
+
+            set
+            {
+                drawingCreativity = value;
+            }
+        }
+
+        public int DrawingVision
+        {
+            get
+            {
+                return drawingVision;
+            }
+
+            set
+            {
+                drawingVision = value;
+            }
+        }
+
+        public int DrawingHumility
+        {
+            get
+            {
+                return drawingHumility;
+            }
+
+            set
+            {
+                drawingHumility = value;
+            }
+        }
+
 
 
 
