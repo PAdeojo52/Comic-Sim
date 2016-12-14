@@ -16,5 +16,15 @@ namespace Comic_Sim
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadGame_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

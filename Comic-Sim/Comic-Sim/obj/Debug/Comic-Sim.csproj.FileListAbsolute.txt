@@ -1,3 +1,4 @@
 C:\Users\Temi\AppData\Local\Temporary Projects\Comic-Sim\bin\Debug\Comic-Sim.exe.config
 C:\Users\Temi\Documents\Visual Studio 2015\Projects\Comic-Sim\Comic-Sim\bin\Debug\Comic-Sim.exe.config
 C:\Users\Temi\Documents\GitHub\Comic-Sim\Comic-Sim\Comic-Sim\bin\Debug\Comic-Sim.exe.config
+C:\Users\PAdeojo.GGC\Source\Repos\Comic-Sim\Comic-Sim\Comic-Sim\bin\Debug\Comic-Sim.exe.config
