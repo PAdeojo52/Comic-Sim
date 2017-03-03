@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Comic_Sim.People__Package
 {
-    class Executives: Person
+    class Illustrator: Person
     {
+        Random rnd;
 
-
-        public Executives()
+        public Illustrator()
         {
             Random rnd = new Random();
             Random artistRandom = new Random();
@@ -29,36 +28,28 @@ namespace Comic_Sim.People__Package
             int reputationSetter = rnd.Next(0, 100);
             int loyaltySetter = rnd.Next(0, 100);
 
-            //Checks to see what the they can do.
-            CanBeWriter = true;
+            CanBeArtist = true;
 
-            //Check proability to see if the instance gets other attributes
-
-            if (artistRandom.Next(100) > 50)
+            if (lawyerRandom.Next(100) > 50)
             {
-                CanBeArtist = true;
+                CanBeLawyer = true; 
             }
 
             if (editorRandom.Next(100) > 50)
             {
                 CanBeEditor = true;
             }
-            if (lawyerRandom.Next(100) > 50)
-            {
-                CanBeLawyer = true;
-            }
+
             if (canDevRandom.Next(100) > 50)
             {
                 CanWebDev = true;
             }
-            if (executiveRandom.Next(100) > 0)
+            if (executiveRandom.Next(100) > 50)
             {
                 CanBeExecutive = true;
             }
 
 
-
-            // //Randoms foe class specfic stats: Writer
             int substanceSetter = rnd.Next(0, 100);
             int focusSetter = rnd.Next(0, 100);
             int logicSetter = rnd.Next(0, 100);
@@ -67,9 +58,6 @@ namespace Comic_Sim.People__Package
             int humorSetter = rnd.Next(0, 100);
             int matureSetter = rnd.Next(0, 100);
 
-
-            // //Randoms foe class specfic stats: Artist
-
             int designRand = rnd.Next(0, 100);
             int drawingCreativityRand = rnd.Next(0, 100);
             int drawingVisionRand = rnd.Next(0, 100);
@@ -77,7 +65,9 @@ namespace Comic_Sim.People__Package
 
 
 
-            // //Randoms foe class specfic stats: Editor
+            //editor
+
+
 
             // //Randoms foe class specfic stats: Lawyer
 
@@ -87,7 +77,7 @@ namespace Comic_Sim.People__Package
             int lawResearchRand = rnd.Next(0, 100);
             int legalCreativityRand = rnd.Next(0, 100);
 
-            // //Randoms foe class specfic stats: webDev
+
 
             // //Randoms foe class specfic stats: excutive
 
@@ -97,14 +87,6 @@ namespace Comic_Sim.People__Package
             int communicaterRand = rnd.Next(0, 100);
             int visionRand = rnd.Next(0, 100);
 
-
-
-
-
-
-            //Normal General Values
-            //create random valu
-            PersonID = writerSetter;
             //Select enum from a list
             FirstName = "John";
             //Select enum from list
@@ -126,28 +108,23 @@ namespace Comic_Sim.People__Package
 
 
 
-            //Setting Writing Stats
 
 
-            Substance = substanceSetter;
-            Focus = focusSetter;
-            Logic = logicSetter;
-            Entertainment = entertainmentSetter;
-            CreativiteWriting = cwSetter;
-            Humor = humorSetter;
-            Mature = matureSetter;
+            Design = designRand;
+            DrawingCreativity = drawingCreativityRand;
+            DrawingVision = drawingVisionRand;
+            DrawingHumility = humilityRand;
 
 
 
 
-            //Setting Artist stats
-
-            if (CanBeArtist == true)
+            if (CanBeLawyer == true)
             {
-                Design = designRand;
-                DrawingCreativity = drawingCreativityRand;
-                DrawingVision = drawingVisionRand;
-                DrawingHumility = humilityRand;
+                CommunicationSkills = communicaterRand;
+                Judgement = judgementRand;
+                AnalyticalSkills = analyticSkillRand;
+                ResearchSkills = lawResearchRand;
+                LegalCreativity = legalCreativityRand;
             }
             else
             {
@@ -180,43 +157,31 @@ namespace Comic_Sim.People__Package
 
 
 
-            //lawyer stuff
-            if (CanBeLawyer == true)
+            //writer stuff
+            if (CanBeWriter == true)
             {
-                CommunicationSkills = communicaterRand;
-                Judgement = judgementRand;
-                AnalyticalSkills = analyticSkillRand;
-                ResearchSkills = lawResearchRand;
-                LegalCreativity = legalCreativityRand;
+                Substance = substanceSetter;
+                Focus = focusSetter;
+                Logic = logicSetter;
+                Entertainment = entertainmentSetter;
+                CreativiteWriting = cwSetter;
+                Humor = humorSetter;
+                Mature = matureSetter;
             }
             else
             {
-                CommunicationSkills = 0;
-                Judgement = 0;
-                AnalyticalSkills = 0;
-                ResearchSkills = 0;
-                LegalCreativity = 0;
+                Substance = 0;
+                Focus = 0;
+                Logic = 0;
+                Entertainment = 0;
+                CreativiteWriting = 0;
+                Humor = 0;
+                Mature = 0;
+
+
             }
 
 
-
-
         }
-
-        /*Throwin some more specfic excecutive attributes
-         * 
-         * Adaptability
-         * Strategic thinking
-         * Integrity
-         * Very good communicator
-         * trustworthy 
-         * Vision
-         * 
-         */
-
-
-
-
-
     }
 }

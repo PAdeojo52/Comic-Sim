@@ -123,6 +123,8 @@ namespace Comic_Sim.People__Package
         private int humor;
         //The ability to write more mature stories
         private int mature;
+        //The Ability colab wiriting
+        private int writingCollab;
 
 
         //illustrator Attributes
@@ -584,7 +586,18 @@ namespace Comic_Sim.People__Package
                 creativiteWriting = value;
             }
         }
+        public int WritingCollab
+        {
+            get
+            {
+                return writingCollab;
+            }
 
+            set
+            {
+                writingCollab = value;
+            }
+        }
         public int Humor
         {
             get
@@ -662,6 +675,8 @@ namespace Comic_Sim.People__Package
                 drawingHumility = value;
             }
         }
+
+       
 
 
 

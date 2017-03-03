@@ -38,7 +38,9 @@ namespace Comic_Sim.People__Package
             CanBeWriter = true;
 
             //Check proability to see if the instance gets other attributes
-
+           //Sets Lawyer to always be true
+           CanBeLawyer = true;
+            
             if (artistRandom.Next(100) > 50)
             {
                 CanBeArtist = true;
@@ -48,10 +50,7 @@ namespace Comic_Sim.People__Package
             {
                 CanBeEditor = true;
             }
-            if (lawyerRandom.Next(100) > 50)
-            {
-                CanBeLawyer = true;
-            }
+           
             if (canDevRandom.Next(100) > 50)
             {
                 CanWebDev = true;
@@ -109,7 +108,7 @@ namespace Comic_Sim.People__Package
 
             //Normal General Values
             //create random valu
-            PersonID = writerSetter;
+           // PersonID = ;
             //Select enum from a list
             FirstName = "John";
             //Select enum from list
@@ -131,16 +130,14 @@ namespace Comic_Sim.People__Package
 
 
 
-            //Setting Writing Stats
+            //Setting Lawyer Stats
 
-
-            Substance = substanceSetter;
-            Focus = focusSetter;
-            Logic = logicSetter;
-            Entertainment = entertainmentSetter;
-            CreativiteWriting = cwSetter;
-            Humor = humorSetter;
-            Mature = matureSetter;
+            CommunicationSkills = communicaterRand;
+            Judgement = judgementRand;
+            AnalyticalSkills = analyticSkillRand;
+            ResearchSkills = lawResearchRand;
+            LegalCreativity = legalCreativityRand;
+           
 
 
 
@@ -185,23 +182,30 @@ namespace Comic_Sim.People__Package
 
 
 
-            //lawyer stuff
-            if (CanBeLawyer == true)
+            //writer stuff
+            if (CanBeWriter == true)
             {
-                CommunicationSkills = communicaterRand;
-                Judgement = judgementRand;
-                AnalyticalSkills = analyticSkillRand;
-                ResearchSkills = lawResearchRand;
-                LegalCreativity = legalCreativityRand;
+                Substance = substanceSetter;
+                Focus = focusSetter;
+                Logic = logicSetter;
+                Entertainment = entertainmentSetter;
+                CreativiteWriting = cwSetter;
+                Humor = humorSetter;
+                Mature = matureSetter;
             }
             else
             {
-                CommunicationSkills = 0;
-                Judgement = 0;
-                AnalyticalSkills = 0;
-                ResearchSkills = 0;
-                LegalCreativity = 0;
+                Substance = 0;
+                Focus = 0;
+                Logic = 0;
+                Entertainment = 0;
+                CreativiteWriting = 0;
+                Humor = 0;
+                Mature = 0;
+
+
             }
+          
  
 
         }
