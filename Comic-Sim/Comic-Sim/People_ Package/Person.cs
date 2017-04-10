@@ -40,6 +40,7 @@ namespace Comic_Sim.People__Package
         private int reputation{get;set;}
 
         //How loyal they are to their current company
+        //hjhjhj
         private int loyalty{get;set;}
 
         //Sets the company the person is hired to
