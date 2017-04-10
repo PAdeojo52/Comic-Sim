@@ -13,181 +13,39 @@ namespace Comic_Sim.People__Package
         private int personID;
 
         //first part of the name
-        private String firstName;
+        private String firstName{get;set;}
 
         //last part of the name
-        private String lastName;
+        private String lastName{get;set;}
 
         //Their age
-        private int age;
+        private int age{get;set;}
 
         //There gender
-        private String gender;
+        private String gender{get;set;}
 
         //Their position title
-        private String title;
+        private String title{get;set;}
 
         //Their ethnicity
-        private String ethnicity;
+        private String ethnicity{get;set;}
 
         //Their nationality
-        private String nationality;
+        private String nationality{get;set;}
 
         //Affects how there person gets on with people
-        private int attitude;
+        private int attitude{get;set;}
 
         //What the general population thinks of the person
-        private int reputation;
+        private int reputation{get;set;}
 
         //How loyal they are to their current company
-        private int loyalty;
+        private int loyalty{get;set;}
 
         //Sets the company the person is hired to
       
             // The getter and sets for the attributes
-        public int PersonID
-        {
-            get
-            {
-                return personID;
-            }
-
-            set
-            {
-                personID = value;
-            }
-        }
-
-        public string FirstName
-        {
-            get
-            {
-                return firstName;
-            }
-
-            set
-            {
-                firstName = value;
-            }
-        }
-
-        public string LastName
-        {
-            get
-            {
-                return lastName;
-            }
-
-            set
-            {
-                lastName = value;
-            }
-        }
-
-        public int Age
-        {
-            get
-            {
-                return age;
-            }
-
-            set
-            {
-                age = value;
-            }
-        }
-
-        public string Gender
-        {
-            get
-            {
-                return gender;
-            }
-
-            set
-            {
-                gender = value;
-            }
-        }
-
-        public string Title
-        {
-            get
-            {
-                return title;
-            }
-
-            set
-            {
-                title = value;
-            }
-        }
-
-        public string Ethnicity
-        {
-            get
-            {
-                return ethnicity;
-            }
-
-            set
-            {
-                ethnicity = value;
-            }
-        }
-
-        public string Nationality
-        {
-            get
-            {
-                return nationality;
-            }
-
-            set
-            {
-                nationality = value;
-            }
-        }
-
-        public int Attitude
-        {
-            get
-            {
-                return attitude;
-            }
-
-            set
-            {
-                attitude = value;
-            }
-        }
-
-        public int Reputation
-        {
-            get
-            {
-                return reputation;
-            }
-
-            set
-            {
-                reputation = value;
-            }
-        }
-
-        public int Loyalty
-        {
-            get
-            {
-                return loyalty;
-            }
-
-            set
-            {
-                loyalty = value;
-            }
-        }
-
+       
 
         //This is the actual methods for persons
         
